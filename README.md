@@ -1,3 +1,2 @@
-# nivel1coderhouse7
-
-Clase 7 de Diseñador WEB
+# nivel1coderhouse
+Clase 2 de HTML5
