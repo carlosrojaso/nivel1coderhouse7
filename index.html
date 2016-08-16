@@ -24,94 +24,56 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section><h1>Clase 6: Diseñador WEB</h1></section>
-				<section><h2>Gradientes</h2></section>
-				<section>
-					<ul>
-						<li>top</li>
-						<li>right</li>
-						<li>left</li>
-						<li>bottom</li>
-					</ul>
-				</section>
+				<section><h1>Clase 9: SASS</h1></section>
+				<section><h2>Variables</h2></section>
 				<section>
 					<pre>
 						<code>
-#grad {
-  background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, red, yellow); /* Standard syntax */
-}
-						</code>
-					</pre>
-					<a href="http://www.w3schools.com/css/css3_gradients.asp">LINK</a>
-				</section>
-				<section>
-					<h1>Transformación</h1>
-				</section>
-				<section>
-					<pre>
-						<code>
-div {
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
-}
-						</code>
-					</pre>
-					<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp">LINK</a>
-				</section>
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
 
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+						</code>
+					</pre>
+				</section>
+				<section><h2>Anidamiento</h2></section>
 				<section>
-					<h1>Transiciones</h1>
+					<pre>
+						<code>
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h2>Importar</h2>
 				</section>
 				<section>
 					<pre>
 						<code>
-div {
-    width: 100px;
-    height: 100px;
-    background: red;
-    -webkit-transition: width 2s; /* Safari */
-    transition: width 2s;
-}		
+// Importamos los estilos de _menu.scss
+// cuando se compile estilos.scss
+@import "menu";
 						</code>
 					</pre>
-					<a href="http://www.w3schools.com/css/css3_transitions.asp">LINK</a>
+					<img src="http://i.imgur.com/rdqsAPB.jpg" alt="">
 				</section>
-
-				<section>
-					<h1>Animaciones</h1>
-				</section>
-				<section>
-					<pre>
-						<code>
-/* The animation code */
-@keyframes example {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
-}
-
-/* The element to apply the animation to */
-div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    animation-name: example;
-    animation-duration: 4s;
-}
-						</code>
-					</pre>
-					<a href="http://www.w3schools.com/css/css3_animations.asp">LINK</a>
-				</section>
-				
-			<section>
-				<h1>Practicar, Practicar!!!</h1>
-			</section>
 			</div>
 		</div>
 
